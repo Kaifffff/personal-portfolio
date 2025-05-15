@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -77,7 +78,7 @@
         <div class="row">
           <div class="col">
             <div class="">
-              <h1 id="name">Mohammad Kaif</h1>
+              <h1 id="name" class="title">Mohammad Kaif</h1>
               <h3>Hello there! 👋🏻</h3>
               <p class="fs-4">
                 I am a passionate Full Stack Web Developer with a talent for
@@ -106,6 +107,10 @@
 
       <div id="Skill" class="mt-4">
         <h1 class="text-center">Skills</h1>
+         <!-- <div class="d-grid gap-2 col-4 mx-auto mb-3" >
+          <button class="btn btn-secondary mb-2" id="toggle-skill">Skills</button>
+         </div> -->
+         
         <table class="table" id="table">
           <tbody class="table-group-divider border">
             <tr>
@@ -144,10 +149,10 @@
           </tbody>
         </table>
       </div>
-      <div id="Projects" class="mt-4">
+      <div id="Projects" class="mt-3">
         <h1 class="text-center">Project</h1>
   <div class="row">
-  <div class="col-lg-4 col-12 project-img div-img mt-5">
+  <div class="col-lg-4 col-12 project-img div-img mt-2">
     <div class="card project holo-border project-img">
       <img src="images/Screenshot 2025-01-21 170543.png" class=" project-img img-fluid" alt="...">
       <div class="overlay p-3">
@@ -192,7 +197,7 @@
   </div>
 </div>
       </div>
-      <div id="Bio" class="holo-border mt-5">
+      <div id="Bio" class="holo-border mt-3">
         <h1 class="text-center">Bio</h1>
         <p>
           I am a self-motivated and quick learner with a strong analytical
@@ -218,7 +223,7 @@
           exploring the world of sports.
         </p>
       </div>
-      <div id="Experiance" class=" holo-border mt-4">
+      <div id="Experiance" class=" holo-border mt-3">
         <h1 class="text-center">Experiance</h1>
         <div>
           <h2>Frontend Developer Intern</h2>
@@ -234,7 +239,7 @@
           </p>
         </div>
       </div>
-      <div id="Education" class="holo-border mt-4">
+      <div id="Education" class="holo-border mt-3">
         <h1 class="text-center">Education</h1>
         <div>
           <h2>Bachelor of Technology in Computer Science</h2>
@@ -278,17 +283,22 @@
                 required
               ></textarea>
               <br />
-              <div class=" d-grid gap-2 col-4  mx-auto">
-                <button class="btn btn-success" type="submit">Send &nbsp; <i class="fa-solid fa-paper-plane"></i></button>
+              <div class="d-grid gap-2 mx-auto mb-3">
+                  <button class="btn btn-success" type="submit">Send &nbsp; <i class="fa-solid fa-paper-plane"></i></button>
               </div>
+             
+              
               
             </form>
+             <div class="d-grid gap-2 mx-auto">
+                  <button class="btn btn-success" id="back-to-top">Back to Top</button>
+              </div>
           </div>
           <div class="col-sm-2"></div>
         </div>
       </div>
     </div>
       </div>
-      
+      <script src="app.js"></script>
   </body>
 </html>
