@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple RGB Border</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rgb-border {
+      width: 300px;
+      height: 200px;
+      border: 4px solid;
+      border-radius: 12px;
+      background: transparent;
+      border-image: linear-gradient(45deg,
+        red, orange, yellow, green, cyan, blue, violet, red) 1;
+      animation: borderAnimation 6s linear infinite;
+    }
+
+    @keyframes borderAnimation {
+      0% {
+        border-image-source: linear-gradient(45deg,
+          red, orange, yellow, green, cyan, blue, violet, red);
+      }
+      100% {
+        border-image-source: linear-gradient(405deg,
+          red, orange, yellow, green, cyan, blue, violet, red);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rgb-border"></div>
+</body>
+</html>
