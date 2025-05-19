@@ -111,3 +111,11 @@ body {
   color: white;
   transition: color 0.5s;
 }
+
+.profile-picture{
+  height: 80%;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #4ECDC4 , 0 0 40px #349090;
+}
